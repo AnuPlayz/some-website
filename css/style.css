@@ -14,13 +14,16 @@ body {
   min-height: 100vh;
   display: grid;
   align-content: center;
-  gap: 2rem;
-  padding: 2rem;
   font-family: "Poppins", sans-serif;
   color: var(--color);
   background: var(--bgColor);
 }
 
+.title {
+  font-weight: bold !important;
+  font-size: large !important;
+  font-style: italic !important;
+}
 .h1 {
   text-align: center;
 }
@@ -34,7 +37,7 @@ ul {
   grid-auto-columns: max-content;
   column-gap: var(--col-gap);
   list-style: none;
-  width: min(60rem, 90%);
+  width: min(60rem, 95%);
   margin-inline: auto;
 }
 
