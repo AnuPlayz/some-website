@@ -9,6 +9,10 @@ html {
   box-sizing: inherit;
 }
 
+.row{
+   padding: 5vh;
+}
+
 .column {
   float: left;
   width: 33.3%;
@@ -58,7 +62,6 @@ html {
 }
 
 body {
-  padding: 10vh;
   font-family: 'Open Sans', sans-serif;
   color: #0c0c0c;
   background-color: #ffffff;
