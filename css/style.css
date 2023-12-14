@@ -1,7 +1,64 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
 @import url('https://fonts.cdnfonts.com/css/cinzel-decorative-2');
 
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
 body {
+  padding: 10vh;
   font-family: 'Open Sans', sans-serif;
   color: #0c0c0c;
   background-color: #ffffff;
@@ -11,7 +68,6 @@ body {
 .container-timeline {
   --color: rgba(30, 30, 30);
   --bgColor: #ffffff;
-  min-height: 100vh;
   display: grid;
   align-content: center;
   font-family: "Open Sans", sans-serif;
@@ -19,10 +75,16 @@ body {
   background: var(--bgColor);
 }
 
+.aloo{
+  text-align: center;
+}
+
 .title {
   font-weight: bold !important;
   font-size: large !important;
   font-style: italic !important;
+  text-align: center;
+  align-items: center;
 }
 
 .h1 {
